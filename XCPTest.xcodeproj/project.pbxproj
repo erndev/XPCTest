@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9475242A1BB30A5000949DC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524291BB30A5000949DC3 /* AppDelegate.m */; };
+		9475242C1BB30A5000949DC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475242B1BB30A5000949DC3 /* main.m */; };
+		947524311BB30A5000949DC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947524301BB30A5000949DC3 /* Images.xcassets */; };
+		947524341BB30A5000949DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947524321BB30A5000949DC3 /* Main.storyboard */; };
+		947524401BB30A5000949DC3 /* XCPTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475243F1BB30A5000949DC3 /* XCPTestTests.m */; };
+		9475244C1BB30AE100949DC3 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475244B1BB30AE100949DC3 /* Item.m */; };
+		9475244F1BB30CE000949DC3 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475244E1BB30CE000949DC3 /* ListViewController.m */; };
+		947524521BB30CEF00949DC3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524511BB30CEF00949DC3 /* DetailViewController.m */; };
+		947524571BB310A800949DC3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524561BB310A800949DC3 /* WindowController.m */; };
+		9475245A1BB3422500949DC3 /* iTunesFeedDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524591BB3422500949DC3 /* iTunesFeedDownloader.m */; };
+		9475245D1BB344A700949DC3 /* ItemValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475245C1BB344A700949DC3 /* ItemValueTransformer.m */; };
+		94DB4F121BB9950B000A2717 /* ItemsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB4F111BB9950B000A2717 /* ItemsDataSource.m */; };
+		94DB4F151BB99879000A2717 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB4F141BB99879000A2717 /* ItemCell.m */; };
+		94DB4F231BBA7A0E000A2717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB4F221BBA7A0E000A2717 /* main.m */; };
+		94DB4F261BBA7A0E000A2717 /* DownloadService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 94DB4F1A1BBA7A0E000A2717 /* DownloadService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94DB4F2D1BBA7B94000A2717 /* iTunesXPCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB4F2C1BBA7B94000A2717 /* iTunesXPCDownloader.m */; };
+		94DB4F2E1BBA7C3B000A2717 /* iTunesFeedDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524591BB3422500949DC3 /* iTunesFeedDownloader.m */; };
+		94DB4F2F1BBA7C3C000A2717 /* iTunesFeedDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 947524591BB3422500949DC3 /* iTunesFeedDownloader.m */; };
+		94DB4F301BBA7C4A000A2717 /* ItemValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475245C1BB344A700949DC3 /* ItemValueTransformer.m */; };
+		94DB4F311BBA7C54000A2717 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475244B1BB30AE100949DC3 /* Item.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9475243A1BB30A5000949DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9475241B1BB30A5000949DC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 947524221BB30A5000949DC3;
+			remoteInfo = XCPTest;
+		};
+		94DB4F241BBA7A0E000A2717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9475241B1BB30A5000949DC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94DB4F191BBA7A0E000A2717;
+			remoteInfo = DownloadService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94DB4F2A1BBA7A0E000A2717 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				94DB4F261BBA7A0E000A2717 /* DownloadService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		947524231BB30A5000949DC3 /* XCPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		947524271BB30A5000949DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947524281BB30A5000949DC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		947524291BB30A5000949DC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9475242B1BB30A5000949DC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		947524301BB30A5000949DC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		947524331BB30A5000949DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		947524391BB30A5000949DC3 /* XCPTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCPTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9475243E1BB30A5000949DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9475243F1BB30A5000949DC3 /* XCPTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPTestTests.m; sourceTree = "<group>"; };
+		947524491BB30A7F00949DC3 /* DownloadProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadProtocol.h; sourceTree = "<group>"; };
+		9475244A1BB30AE100949DC3 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		9475244B1BB30AE100949DC3 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		9475244D1BB30CE000949DC3 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		9475244E1BB30CE000949DC3 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		947524501BB30CEF00949DC3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		947524511BB30CEF00949DC3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		947524541BB30F6D00949DC3 /* ItemSelectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemSelectionProtocol.h; sourceTree = "<group>"; };
+		947524551BB310A800949DC3 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		947524561BB310A800949DC3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		947524581BB3422500949DC3 /* iTunesFeedDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesFeedDownloader.h; sourceTree = "<group>"; };
+		947524591BB3422500949DC3 /* iTunesFeedDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesFeedDownloader.m; sourceTree = "<group>"; };
+		9475245B1BB344A700949DC3 /* ItemValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemValueTransformer.h; sourceTree = "<group>"; };
+		9475245C1BB344A700949DC3 /* ItemValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemValueTransformer.m; sourceTree = "<group>"; };
+		94DB4F101BB9950B000A2717 /* ItemsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsDataSource.h; sourceTree = "<group>"; };
+		94DB4F111BB9950B000A2717 /* ItemsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsDataSource.m; sourceTree = "<group>"; };
+		94DB4F131BB99879000A2717 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		94DB4F141BB99879000A2717 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		94DB4F1A1BBA7A0E000A2717 /* DownloadService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = DownloadService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		94DB4F1D1BBA7A0E000A2717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94DB4F221BBA7A0E000A2717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94DB4F2B1BBA7B94000A2717 /* iTunesXPCDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesXPCDownloader.h; sourceTree = "<group>"; };
+		94DB4F2C1BBA7B94000A2717 /* iTunesXPCDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesXPCDownloader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		947524201BB30A5000949DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947524361BB30A5000949DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DB4F171BBA7A0E000A2717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9475241A1BB30A5000949DC3 = {
+			isa = PBXGroup;
+			children = (
+				947524251BB30A5000949DC3 /* XCPTest */,
+				9475243C1BB30A5000949DC3 /* XCPTestTests */,
+				94DB4F1B1BBA7A0E000A2717 /* DownloadService */,
+				947524241BB30A5000949DC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		947524241BB30A5000949DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				947524231BB30A5000949DC3 /* XCPTest.app */,
+				947524391BB30A5000949DC3 /* XCPTestTests.xctest */,
+				94DB4F1A1BBA7A0E000A2717 /* DownloadService.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		947524251BB30A5000949DC3 /* XCPTest */ = {
+			isa = PBXGroup;
+			children = (
+				9475245F1BB357EB00949DC3 /* Model */,
+				9475245E1BB357D800949DC3 /* Window & View Controllers */,
+				947524531BB30F4C00949DC3 /* Protocols */,
+				947524281BB30A5000949DC3 /* AppDelegate.h */,
+				947524291BB30A5000949DC3 /* AppDelegate.m */,
+				947524301BB30A5000949DC3 /* Images.xcassets */,
+				947524321BB30A5000949DC3 /* Main.storyboard */,
+				947524261BB30A5000949DC3 /* Supporting Files */,
+			);
+			path = XCPTest;
+			sourceTree = "<group>";
+		};
+		947524261BB30A5000949DC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				947524271BB30A5000949DC3 /* Info.plist */,
+				9475242B1BB30A5000949DC3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9475243C1BB30A5000949DC3 /* XCPTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9475243F1BB30A5000949DC3 /* XCPTestTests.m */,
+				9475243D1BB30A5000949DC3 /* Supporting Files */,
+			);
+			path = XCPTestTests;
+			sourceTree = "<group>";
+		};
+		9475243D1BB30A5000949DC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9475243E1BB30A5000949DC3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		947524531BB30F4C00949DC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				947524491BB30A7F00949DC3 /* DownloadProtocol.h */,
+				947524541BB30F6D00949DC3 /* ItemSelectionProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9475245E1BB357D800949DC3 /* Window & View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9475244D1BB30CE000949DC3 /* ListViewController.h */,
+				9475244E1BB30CE000949DC3 /* ListViewController.m */,
+				947524501BB30CEF00949DC3 /* DetailViewController.h */,
+				947524511BB30CEF00949DC3 /* DetailViewController.m */,
+				947524551BB310A800949DC3 /* WindowController.h */,
+				947524561BB310A800949DC3 /* WindowController.m */,
+				94DB4F101BB9950B000A2717 /* ItemsDataSource.h */,
+				94DB4F111BB9950B000A2717 /* ItemsDataSource.m */,
+				94DB4F131BB99879000A2717 /* ItemCell.h */,
+				94DB4F141BB99879000A2717 /* ItemCell.m */,
+			);
+			name = "Window & View Controllers";
+			sourceTree = "<group>";
+		};
+		9475245F1BB357EB00949DC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9475244A1BB30AE100949DC3 /* Item.h */,
+				9475244B1BB30AE100949DC3 /* Item.m */,
+				947524581BB3422500949DC3 /* iTunesFeedDownloader.h */,
+				947524591BB3422500949DC3 /* iTunesFeedDownloader.m */,
+				9475245B1BB344A700949DC3 /* ItemValueTransformer.h */,
+				9475245C1BB344A700949DC3 /* ItemValueTransformer.m */,
+				94DB4F2B1BBA7B94000A2717 /* iTunesXPCDownloader.h */,
+				94DB4F2C1BBA7B94000A2717 /* iTunesXPCDownloader.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		94DB4F1B1BBA7A0E000A2717 /* DownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				94DB4F221BBA7A0E000A2717 /* main.m */,
+				94DB4F1C1BBA7A0E000A2717 /* Supporting Files */,
+			);
+			path = DownloadService;
+			sourceTree = "<group>";
+		};
+		94DB4F1C1BBA7A0E000A2717 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94DB4F1D1BBA7A0E000A2717 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		947524221BB30A5000949DC3 /* XCPTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947524431BB30A5000949DC3 /* Build configuration list for PBXNativeTarget "XCPTest" */;
+			buildPhases = (
+				9475241F1BB30A5000949DC3 /* Sources */,
+				947524201BB30A5000949DC3 /* Frameworks */,
+				947524211BB30A5000949DC3 /* Resources */,
+				94DB4F2A1BBA7A0E000A2717 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94DB4F251BBA7A0E000A2717 /* PBXTargetDependency */,
+			);
+			name = XCPTest;
+			productName = XCPTest;
+			productReference = 947524231BB30A5000949DC3 /* XCPTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		947524381BB30A5000949DC3 /* XCPTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947524461BB30A5000949DC3 /* Build configuration list for PBXNativeTarget "XCPTestTests" */;
+			buildPhases = (
+				947524351BB30A5000949DC3 /* Sources */,
+				947524361BB30A5000949DC3 /* Frameworks */,
+				947524371BB30A5000949DC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9475243B1BB30A5000949DC3 /* PBXTargetDependency */,
+			);
+			name = XCPTestTests;
+			productName = XCPTestTests;
+			productReference = 947524391BB30A5000949DC3 /* XCPTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94DB4F191BBA7A0E000A2717 /* DownloadService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94DB4F271BBA7A0E000A2717 /* Build configuration list for PBXNativeTarget "DownloadService" */;
+			buildPhases = (
+				94DB4F161BBA7A0E000A2717 /* Sources */,
+				94DB4F171BBA7A0E000A2717 /* Frameworks */,
+				94DB4F181BBA7A0E000A2717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadService;
+			productName = DownloadService;
+			productReference = 94DB4F1A1BBA7A0E000A2717 /* DownloadService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9475241B1BB30A5000949DC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ernesto;
+				TargetAttributes = {
+					947524221BB30A5000949DC3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					947524381BB30A5000949DC3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 947524221BB30A5000949DC3;
+					};
+					94DB4F191BBA7A0E000A2717 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 9475241E1BB30A5000949DC3 /* Build configuration list for PBXProject "XCPTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9475241A1BB30A5000949DC3;
+			productRefGroup = 947524241BB30A5000949DC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				947524221BB30A5000949DC3 /* XCPTest */,
+				947524381BB30A5000949DC3 /* XCPTestTests */,
+				94DB4F191BBA7A0E000A2717 /* DownloadService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		947524211BB30A5000949DC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947524311BB30A5000949DC3 /* Images.xcassets in Resources */,
+				947524341BB30A5000949DC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947524371BB30A5000949DC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DB4F181BBA7A0E000A2717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9475241F1BB30A5000949DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB4F151BB99879000A2717 /* ItemCell.m in Sources */,
+				94DB4F2D1BBA7B94000A2717 /* iTunesXPCDownloader.m in Sources */,
+				94DB4F121BB9950B000A2717 /* ItemsDataSource.m in Sources */,
+				9475245D1BB344A700949DC3 /* ItemValueTransformer.m in Sources */,
+				947524521BB30CEF00949DC3 /* DetailViewController.m in Sources */,
+				9475245A1BB3422500949DC3 /* iTunesFeedDownloader.m in Sources */,
+				947524571BB310A800949DC3 /* WindowController.m in Sources */,
+				9475244C1BB30AE100949DC3 /* Item.m in Sources */,
+				9475242C1BB30A5000949DC3 /* main.m in Sources */,
+				9475244F1BB30CE000949DC3 /* ListViewController.m in Sources */,
+				9475242A1BB30A5000949DC3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947524351BB30A5000949DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB4F2F1BBA7C3C000A2717 /* iTunesFeedDownloader.m in Sources */,
+				947524401BB30A5000949DC3 /* XCPTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DB4F161BBA7A0E000A2717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB4F311BBA7C54000A2717 /* Item.m in Sources */,
+				94DB4F301BBA7C4A000A2717 /* ItemValueTransformer.m in Sources */,
+				94DB4F2E1BBA7C3B000A2717 /* iTunesFeedDownloader.m in Sources */,
+				94DB4F231BBA7A0E000A2717 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9475243B1BB30A5000949DC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 947524221BB30A5000949DC3 /* XCPTest */;
+			targetProxy = 9475243A1BB30A5000949DC3 /* PBXContainerItemProxy */;
+		};
+		94DB4F251BBA7A0E000A2717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94DB4F191BBA7A0E000A2717 /* DownloadService */;
+			targetProxy = 94DB4F241BBA7A0E000A2717 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		947524321BB30A5000949DC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				947524331BB30A5000949DC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		947524411BB30A5000949DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		947524421BB30A5000949DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		947524441BB30A5000949DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCPTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		947524451BB30A5000949DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCPTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		947524471BB30A5000949DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCPTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCPTest.app/Contents/MacOS/XCPTest";
+			};
+			name = Debug;
+		};
+		947524481BB30A5000949DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCPTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCPTest.app/Contents/MacOS/XCPTest";
+			};
+			name = Release;
+		};
+		94DB4F281BBA7A0E000A2717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DownloadService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		94DB4F291BBA7A0E000A2717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DownloadService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernesto.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9475241E1BB30A5000949DC3 /* Build configuration list for PBXProject "XCPTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947524411BB30A5000949DC3 /* Debug */,
+				947524421BB30A5000949DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947524431BB30A5000949DC3 /* Build configuration list for PBXNativeTarget "XCPTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947524441BB30A5000949DC3 /* Debug */,
+				947524451BB30A5000949DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947524461BB30A5000949DC3 /* Build configuration list for PBXNativeTarget "XCPTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947524471BB30A5000949DC3 /* Debug */,
+				947524481BB30A5000949DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94DB4F271BBA7A0E000A2717 /* Build configuration list for PBXNativeTarget "DownloadService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94DB4F281BBA7A0E000A2717 /* Debug */,
+				94DB4F291BBA7A0E000A2717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9475241B1BB30A5000949DC3 /* Project object */;
+}
